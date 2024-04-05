@@ -70,12 +70,12 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        top: 10rem;
+        top: 5rem;
         left: 6rem;
     }
     button{
         position: relative;
-        top: 12rem;
-        left: 9rem;
+        top: 7rem;
+        left: 8.5rem;
     }
   }
