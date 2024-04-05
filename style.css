@@ -1,0 +1,81 @@
+body{
+    position: relative;
+}
+
+.input {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10rem;
+    left: 35rem;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #ccc;
+    -webkit-box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+            box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    -webkit-transition: 300ms ease-in-out;
+    transition: 300ms ease-in-out;
+  }
+  
+  .input:focus {
+    background-color: white;
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow:  13px 13px 100px #969696,
+               -13px -13px 100px #ffffff;
+            box-shadow:  13px 13px 100px #969696,
+               -13px -13px 100px #ffffff;
+  }
+
+  button {
+    position: relative;
+    top: 7.5rem;
+    left: 48rem;
+    --hover-shadows: 10px 10px 25px #787474, -10px -10px 25px #303030;
+    --accent: rgb(6, 22, 158);
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    border: none;
+    border-radius: 1.1em;
+    background-color: aquamarine;
+    cursor: pointer;
+    color: rgb(16, 16, 16);
+    padding: 1em 2em;
+    transition: box-shadow ease-in-out 0.3s, background-color ease-in-out 0.1s,
+      letter-spacing ease-in-out 0.1s, transform ease-in-out 0.1s;
+  }
+  
+  button:hover {
+    background-image: linear-gradient(to bottom right, #00c6ff, #0072ff);
+    color: white;
+  }
+  
+  button:active {
+    box-shadow: var(--hover-shadows), var(--accent) 0px 0px 30px 5px;
+    background-color: var(--accent);
+    transform: scale(0.95);
+  }
+  
+
+  @media screen and (max-width: 480px) {
+    body {
+      background-color: rgb(240, 247, 240);
+    }
+    .input{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 15rem;
+        left: 6rem;
+    }
+    button{
+        position: relative;
+        top: 17rem;
+        left: 9rem;
+    }
+  }
